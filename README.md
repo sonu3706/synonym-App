@@ -1,15 +1,15 @@
-<!-- Tech Stack used for the application -->
+` `Tech Stack used for the application`
 1. Angular-6 for frontend
 2. Spring Boot version 2.0.4
 3. Mysql version 5.6
 4. Docker- compose version 1.22.0
 
-<!-- Steps to package and run the frontend:--- -->
+` Steps to package and run the frontend`
 
 1. Navigate to the inside synonyms-Frontend and type `npm install`.(Node and npm has to be installed).
 2. Then type `npm start` which will bootstrap the frontend on port number 4200.
 
-<!-- Steps to package and run Backend service -->
+` Steps to package and run Backend service`
 
 1. Type following command to package and the backend `mvn clean package -DskipTests`.
 2. If Docker is installed in the machine the navigate to to the docker-compose file and run the following command over terminal
