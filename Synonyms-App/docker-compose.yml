@@ -1,0 +1,23 @@
+version: '3'
+services:
+  synonyms-app:
+    image: synonyms-app
+    build:
+      context: .
+    restart: always
+    network_mode: host
+    ports:
+    - 8081:8081
+    depends_on:
+    - user-mysql
+  user-mysql:
+    image: mysql:5.6
+    restart: always
+    network_mode: host
+    ports:
+    - 3306:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: root123
+      MYSQL_USER: chandan
+      MYSQL_PASSWORD: root123
+      MYSQL_DATABASE: demodb
